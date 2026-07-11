@@ -253,6 +253,12 @@ section {
   gap: 28px;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
 .card {
   background: #fff;
   border-radius: var(--radius);
@@ -769,6 +775,7 @@ section {
   }
   .grid-3,
   .grid-2,
+  .grid-4,
   .menu-list {
     grid-template-columns: 1fr;
   }
