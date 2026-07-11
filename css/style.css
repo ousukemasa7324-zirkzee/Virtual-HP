@@ -118,7 +118,7 @@ svg {
   color: #fff;
   position: relative;
   overflow: hidden;
-  padding: 76px 0 88px;
+  padding: 40px 0 48px;
 }
 
 .hero::before {
@@ -159,14 +159,14 @@ svg {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
   font-weight: 900;
   line-height: 1.25;
-  margin: 0 0 18px;
+  margin: 0 0 12px;
 }
 
 .hero p.lead {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   max-width: 46ch;
   opacity: 0.95;
-  margin: 0 0 32px;
+  margin: 0 0 20px;
 }
 
 .hero-emoji-stack {
@@ -176,10 +176,10 @@ svg {
 }
 
 .hero-photo {
-  border-radius: 24px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 24px 46px rgba(0, 0, 0, 0.35);
-  min-height: 320px;
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.35);
+  min-height: 240px;
 }
 
 .hero-photo img {
@@ -226,12 +226,12 @@ svg {
 /* ---------- Sections ---------- */
 
 section {
-  padding: 72px 0;
+  padding: 40px 0;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 26px;
 }
 
 .section-title .kicker {
@@ -252,27 +252,36 @@ section {
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 16px;
 }
 
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  gap: 16px;
 }
 
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  gap: 14px;
 }
 
 .card {
   background: #fff;
   border-radius: var(--radius);
-  padding: 32px 26px;
+  padding: 20px 18px;
   box-shadow: var(--shadow);
   text-align: center;
+}
+
+.card .photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  box-shadow: 0 4px 10px rgba(35, 24, 21, 0.2);
 }
 
 .card .icon {
@@ -281,8 +290,8 @@ section {
 }
 
 .card h3 {
-  margin: 0 0 10px;
-  font-size: 1.15rem;
+  margin: 0 0 6px;
+  font-size: 1.05rem;
   font-weight: 900;
 }
 
@@ -351,29 +360,29 @@ section {
 /* ---------- Menu page ---------- */
 
 .menu-category {
-  margin-bottom: 56px;
+  margin-bottom: 30px;
 }
 
 .menu-category h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 900;
   border-left: 8px solid var(--red);
   padding-left: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .menu-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 12px;
 }
 
 .menu-item {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   background: #fff;
   border-radius: var(--radius);
-  padding: 18px 20px;
+  padding: 12px 16px;
   box-shadow: var(--shadow);
   align-items: flex-start;
 }
@@ -418,9 +427,9 @@ section {
 .story-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 28px;
   align-items: center;
-  margin-bottom: 64px;
+  margin-bottom: 30px;
 }
 
 .story-block.reverse .visual {
@@ -430,27 +439,33 @@ section {
 .visual {
   background: linear-gradient(135deg, var(--dark), var(--dark-soft));
   border-radius: var(--radius);
-  min-height: 240px;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+  overflow: hidden;
   box-shadow: var(--shadow);
 }
 
+.visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .story-block h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 900;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .quote-block {
   background: var(--dark);
   color: #fff;
   border-radius: var(--radius);
-  padding: 48px;
+  padding: 30px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .quote-block p.quote {
@@ -479,7 +494,7 @@ section {
 
 .info-table th,
 .info-table td {
-  padding: 18px 24px;
+  padding: 12px 20px;
   text-align: left;
   border-bottom: 1px solid #f0e6d8;
 }
@@ -528,7 +543,7 @@ section {
   background: var(--dark);
   color: #fff;
   text-align: center;
-  padding: 64px 0;
+  padding: 36px 0;
 }
 
 .cta-band h2 {
@@ -595,8 +610,8 @@ section {
 
 .info-row {
   display: flex;
-  gap: 20px;
-  padding: 18px 24px;
+  gap: 14px;
+  padding: 12px 20px;
   border-bottom: 1px solid #f0e6d8;
   align-items: baseline;
 }
@@ -633,7 +648,7 @@ section {
 .news-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 12px;
 }
 
 .news-card {
@@ -644,16 +659,18 @@ section {
 }
 
 .news-card .thumb {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  background: linear-gradient(135deg, var(--yellow), #ffe08a);
+  height: 110px;
+  overflow: hidden;
+}
+
+.news-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .news-card .body {
-  padding: 16px;
+  padding: 12px 14px;
 }
 
 .news-card .date {
@@ -663,10 +680,10 @@ section {
 }
 
 .news-card h4 {
-  font-size: 0.88rem;
-  margin: 6px 0 0;
+  font-size: 0.86rem;
+  margin: 4px 0 0;
   font-weight: 900;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 /* ---------- Category grid (menu tiles) ---------- */
@@ -674,15 +691,15 @@ section {
 .category-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  gap: 10px;
 }
 
 .category-tile {
-  background: #fff;
+  position: relative;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 22px 10px;
-  text-align: center;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
   transition: transform 0.15s ease;
 }
 
@@ -690,24 +707,45 @@ section {
   transform: translateY(-3px);
 }
 
-.category-tile .icon {
-  font-size: 2.1rem;
-  margin-bottom: 8px;
+.category-tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(35, 24, 21, 0) 40%, rgba(35, 24, 21, 0.82) 100%);
+}
+
+.category-tile .label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 6px;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
 }
 
 .category-tile .en {
   display: block;
-  font-size: 0.66rem;
+  font-size: 0.6rem;
   font-weight: 900;
-  color: var(--red);
+  color: var(--yellow);
   letter-spacing: 0.08em;
 }
 
 .category-tile .ja {
   display: block;
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 /* ---------- Contents grid ---------- */
@@ -715,14 +753,14 @@ section {
 .contents-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 12px;
 }
 
 .contents-tile {
   background: var(--dark);
   color: #fff;
   border-radius: var(--radius);
-  padding: 28px 20px;
+  padding: 16px 14px;
   text-align: center;
   position: relative;
 }
