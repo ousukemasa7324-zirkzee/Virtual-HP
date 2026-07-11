@@ -1,14 +1,17 @@
 /* FLIP BURGER - shared stylesheet */
 
 :root {
-  --red: #e6362a;
-  --red-dark: #b8281f;
-  --yellow: #ffc72c;
-  --dark: #221a17;
-  --cream: #fff8ec;
-  --gray: #6b5f57;
+  --red: #c8562e;
+  --red-dark: #9c4322;
+  --yellow: #ffe500;
+  --dark: #231815;
+  --dark-soft: #362722;
+  --cream: #fffacc;
+  --gray: #5c5048;
   --radius: 14px;
-  --shadow: 0 10px 24px rgba(34, 26, 23, 0.12);
+  --shadow: 0 10px 24px rgba(35, 24, 21, 0.12);
+  --font-body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", sans-serif;
+  --font-display: "Roboto", "Noto Sans JP", "Hiragino Sans", sans-serif;
 }
 
 * {
@@ -21,10 +24,15 @@ html {
 
 body {
   margin: 0;
-  font-family: "Hiragino Sans", "Yu Gothic UI", "Segoe UI", -apple-system, sans-serif;
-  background: var(--cream);
+  font-family: var(--font-body);
+  background: #fff;
   color: var(--dark);
   line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
 }
 
 a {
@@ -99,14 +107,14 @@ svg {
 }
 
 .nav-links a.active {
-  background: var(--red);
-  color: #fff;
+  background: var(--yellow);
+  color: var(--dark);
 }
 
 /* ---------- Hero ---------- */
 
 .hero {
-  background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 100%);
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -119,8 +127,8 @@ svg {
   inset: 0;
   background-image: repeating-linear-gradient(
     45deg,
-    rgba(255, 199, 44, 0.12) 0,
-    rgba(255, 199, 44, 0.12) 22px,
+    rgba(255, 229, 0, 0.08) 0,
+    rgba(255, 229, 0, 0.08) 22px,
     transparent 22px,
     transparent 44px
   );
@@ -206,7 +214,7 @@ svg {
 .btn-primary {
   background: var(--yellow);
   color: var(--dark);
-  box-shadow: 0 8px 0 var(--red-dark);
+  box-shadow: 0 6px 16px rgba(35, 24, 21, 0.3);
 }
 
 .btn-outline {
@@ -285,7 +293,7 @@ section {
 }
 
 .section-alt {
-  background: #fff2da;
+  background: var(--cream);
 }
 
 /* ---------- Menu preview / featured cards ---------- */
@@ -420,7 +428,7 @@ section {
 }
 
 .visual {
-  background: linear-gradient(135deg, var(--red), var(--red-dark));
+  background: linear-gradient(135deg, var(--dark), var(--dark-soft));
   border-radius: var(--radius);
   min-height: 240px;
   display: flex;
@@ -478,7 +486,7 @@ section {
 
 .info-table th {
   width: 160px;
-  background: #fff2da;
+  background: var(--cream);
   font-weight: 900;
   color: var(--red-dark);
 }
@@ -754,7 +762,7 @@ section {
   display: block;
   text-align: center;
   padding: 16px;
-  background: #fff2da;
+  background: var(--cream);
   font-weight: 900;
   font-size: 0.85rem;
   color: var(--red-dark);
