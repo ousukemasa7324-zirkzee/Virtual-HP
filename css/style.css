@@ -863,4 +863,143 @@ section {
     flex-direction: column;
     text-align: center;
   }
+  .container {
+    padding: 0 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .hero {
+    padding: 28px 0 34px;
+  }
+  .hero p.lead {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.95rem;
+  }
+  .hero-photo {
+    min-height: 0;
+  }
+  .hero-photo img {
+    aspect-ratio: 16 / 10;
+  }
+  .section-title {
+    margin-bottom: 18px;
+  }
+  .menu-item {
+    padding: 12px;
+    gap: 12px;
+  }
+  .menu-item .thumb-img {
+    width: 64px;
+    height: 64px;
+  }
+  .menu-item .info h4 {
+    font-size: 0.95rem;
+  }
+  .menu-item .info p {
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+  .info-table th {
+    width: 96px;
+    font-size: 0.8rem;
+  }
+  .info-table th,
+  .info-table td {
+    padding: 10px 12px;
+    font-size: 0.86rem;
+  }
+  .quote-block {
+    padding: 22px 18px;
+  }
+  .quote-block p.quote {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  .category-grid {
+    gap: 8px;
+  }
+  .category-tile .en {
+    font-size: 0.56rem;
+  }
+  .category-tile .ja {
+    font-size: 0.7rem;
+  }
+  .story-block .visual {
+    margin-bottom: 12px;
+  }
+  .story-block h3 {
+    font-size: 1.15rem;
+  }
+  .card p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+  .cta-band {
+    padding: 28px 0;
+  }
+}
+
+/* ---------- Small phones ---------- */
+
+@media (max-width: 600px) {
+  .site-header .container {
+    flex-direction: column;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 6px;
+  }
+  .logo {
+    font-size: 1.15rem;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nav-links a {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+  .promo-bar {
+    font-size: 0.72rem;
+    padding: 7px 12px;
+    line-height: 1.6;
+  }
+  .hero h1 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+  .hero-badge {
+    font-size: 0.72rem;
+  }
+  .btn {
+    padding: 11px 20px;
+    font-size: 0.88rem;
+  }
+  .section-title h2 {
+    font-size: 1.35rem;
+  }
+  .menu-category h2 {
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+  .news-card h4 {
+    font-size: 0.78rem;
+  }
+  .news-card .thumb {
+    height: 88px;
+  }
+  .contents-tile h4 {
+    font-size: 0.85rem;
+  }
+  .contents-tile p {
+    font-size: 0.7rem;
+  }
+  .info-row .text {
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
 }
