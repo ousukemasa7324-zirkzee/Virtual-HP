@@ -696,6 +696,8 @@ section {
 
 .category-tile {
   position: relative;
+  display: block;
+  width: 100%;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   aspect-ratio: 3 / 4;
